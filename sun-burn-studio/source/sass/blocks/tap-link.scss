@@ -1,0 +1,17 @@
+.tap-link {
+  color: $basic_color;
+  text-decoration: underline;
+  font-weight: $bold;
+  transition: 0.3s opacity;
+
+  @include hover {
+    &:hover,
+    &:focus {
+     opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: .5;
+  }
+}

@@ -1,0 +1,36 @@
+.info__wrap {
+  @include content;
+
+  @include mobile {
+    @include mobile-content;
+  }
+}
+
+.info__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info__item:nth-child(odd){
+  max-width: 440px;
+  width: 100%;
+
+  @include mobile {
+    max-width: 260px;
+  }
+}
+
+.info__item {
+  padding-bottom: 24px;
+}
+
+.info__heading {
+  font-weight: $bold;
+  color: $heading_color;
+}
+
+.info__text {
+  font-size: 13px;
+  padding-bottom: 4px;
+  color: $list_color;
+}

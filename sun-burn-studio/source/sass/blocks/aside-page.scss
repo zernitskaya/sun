@@ -1,0 +1,38 @@
+.aside-page {
+  padding-bottom: 40px;
+  padding-top: 10px;
+
+  @include mobile {
+    order: 2;
+  }
+}
+
+.aside-page__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include content;
+
+  @include mobile {
+    flex-direction: column;
+    order: 2;
+  }
+}
+
+.aside-page__button {
+  padding-left: 47px;
+
+  @include mobile {
+    padding-left: 0;
+  }
+}
+
+.aside-page__tap {
+  padding-left: 60px;
+
+  @include mobile {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}

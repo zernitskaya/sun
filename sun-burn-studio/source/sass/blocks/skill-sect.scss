@@ -1,0 +1,53 @@
+.skill-sect {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.skill-sect__wrap {
+  @include content;
+
+  @include mobile {
+    @include mobile-content;
+  }
+}
+
+.skill-sect__list {
+  display: grid;
+  grid-template-columns: 54px 54px 54px 54px;
+  grid-template-rows: 24px 24px 24px 24px 24px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  @include mobile {
+    grid-column-gap: 15px;
+    grid-row-gap: 8px
+  }
+}
+
+.skill-sect__item {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-sect__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  @include hover {
+    &:hover,
+    &:focus {
+     opacity: 0.7;
+    }
+  }
+
+  &:active {
+    opacity: .5;
+  }
+}
+
+.skill-sect__title {
+  color: $list_color;
+  font-size: 13px;
+  padding-bottom: 8px;
+}

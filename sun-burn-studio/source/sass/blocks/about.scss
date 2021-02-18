@@ -1,0 +1,19 @@
+.about {
+  padding-bottom: 40px;
+
+  @include mobile {
+    padding-top: 20px;
+  }
+}
+
+.about__wrap {
+  @include content;
+
+  @include mobile {
+    @include mobile-content;
+  }
+}
+
+.about__text {
+  color: $text_color;
+}

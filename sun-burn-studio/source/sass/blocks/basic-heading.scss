@@ -1,0 +1,11 @@
+.basic-heading {
+  color: #fff;
+  padding-left: 44px;
+  font-weight: $bold;
+  font-size: 31px;
+
+    @include mobile {
+      padding-left: 12px;
+      font-size: 20px;
+    }
+}
